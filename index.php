@@ -3,52 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>My Study Plan</title>
 
-    <style>
-        body{
-            font-family: Arial;
-            background:#f4f4f4;
-            margin:0;
-            padding:0;
-        }
-
-        .container{
-            width:400px;
-            margin:100px auto;
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.2);
-            text-align:center;
-        }
-
-        h1{
-            margin-bottom:30px;
-        }
-
-        a{
-            display:block;
-            margin:15px 0;
-            padding:12px;
-            background:#4CAF50;
-            color:white;
-            text-decoration:none;
-            border-radius:5px;
-        }
-
-        a:hover{
-            background:#45a049;
-        }
-    </style>
 </head>
 <body>
+    <header>
+    <div class="logo-text">
+    <img src="img/logo.png" class="logo">
+</div>
+    <nav>
+        <a href="login.php">Login</a>
+        <a href="register.php">Register</a>
+    </nav>
+    </header>
 
-<div class="container">
-    <h1>My Study Plan</h1>
+    <section class="hero">
+    <img src="img/wallpr depan.jpg" class="hero-bg">
+    <div class="hero-overlay"></div>
 
-    <a href="register.php">Register</a>
-    <a href="login.php">Login</a>
+    <div class="hero-text">
+        <h1>Atur Rencana<br>Belajarmu</h1>
+        <p>Buat kegiatan belajar jadi lebih terorganisir dan produktif setiap hari.</p>
+        <a href="register.php" class="hero-btn">Mulai</a>
+    </div>
+</section>
 </div>
 
 </body>
