@@ -20,7 +20,7 @@
     </header>
 
     <section class="hero">
-    <img src="img/wallpr depan.jpg" class="hero-bg">
+    <img src="img/gambar depan.jpg" class="hero-bg">
     <div class="hero-overlay"></div>
 
     <div class="hero-text">

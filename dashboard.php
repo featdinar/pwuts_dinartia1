@@ -22,16 +22,18 @@ $data = mysqli_query($conn, "SELECT * FROM study_plan WHERE id_user='$id_user'")
 </head>
 <body>
 
-    <div class="dashboard-navbar">
+    <header class="dashboard-main-header">
 
-        <h2>Study Plan Dashboard</h2>
-
-        <div>
-            Welcome,
-            <?php echo isset($_SESSION['nama']) ? $_SESSION['nama'] : ''; ?>
-        </div>
-
+    <div class="logo-text">
+        <img src="img/logo.png" class="logo">
     </div>
+
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="logout.php">Logout</a>
+    </nav>
+
+</header>
 
     <div class="dashboard-container">
 
