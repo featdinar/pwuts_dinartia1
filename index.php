@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
 
     <title>My Study Plan</title>
-
 </head>
 <body>
     <header>

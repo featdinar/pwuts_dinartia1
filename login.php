@@ -30,7 +30,6 @@ if (isset($_POST['login'])) {
     <title>Study Plan - Login</title>
 
     <style>
-
         *{
             margin:0;
             padding:0;
@@ -97,32 +96,25 @@ if (isset($_POST['login'])) {
             color:#4f46e5;
             font-weight:bold;
         }
-
     </style>
 
 </head>
 <body>
 
 <div class="container">
-
     <h1>Study Plan</h1>
-    <p>Login to your account</p>
+    <p>Masuk ke akunmu</p>
 
     <form method="POST">
-
-        <input type="email" name="email" placeholder="Email Address" required>
-
+        <input type="email" name="email" placeholder="Alamat Email" required>
         <input type="password" name="password" placeholder="Password" required>
-
         <button type="submit" name="login">Login</button>
-
     </form>
 
     <div class="register-link">
-        Don't have an account?
+        Belum punya akun?
         <a href="register.php">Register</a>
     </div>
-
 </div>
 
 </body>

@@ -101,28 +101,21 @@ if (isset($_POST['register'])) {
 <body>
 
     <div class="container">
-
         <h1>Study Plan</h1>
-        <p>Create your account</p>
+        <p>Buat akunmu</p>
 
         <form method="POST">
-
-            <input type="text" name="name" placeholder="Full Name" required>
-
-            <input type="email" name="email" placeholder="Email Address" required>
-
+            <input type="text" name="name" placeholder="Nama Lengkap" required>
+            <input type="email" name="email" placeholder="Alamat Email" required>
             <input type="password" name="password" placeholder="Password" required>
-
             <button type="submit" name="register">Register</button>
-
         </form>
-
+        
         <div class="login-link">
-            Already have an account?
+            Sudah punya akun?
             <a href="login.php">Login</a>
         </div>
 
     </div>
-
 </body>
 </html>

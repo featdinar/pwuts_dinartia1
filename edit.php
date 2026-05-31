@@ -35,25 +35,54 @@ if (isset($_POST['edit'])) {
 <html>
 <head>
     <title>Edit Study Plan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="add-container">
 
     <h2>Edit Study Plan</h2>
 
+    <p class="form-subtitle">
+        Perbarui data rencana belajarmu
+    </p>
+
     <form method="POST">
 
-        <input type="text" name="title" value="<?php echo $row['title']; ?>" required>
+        <input
+            type="text"
+            name="title"
+            value="<?php echo $row['title']; ?>"
+            required
+        >
 
         <textarea name="description"><?php echo $row['description']; ?></textarea>
 
-        <input type="date" name="deadline" value="<?php echo $row['deadline']; ?>" required>
+        <input
+            type="date"
+            name="deadline"
+            value="<?php echo $row['deadline']; ?>"
+            required
+        >
 
         <select name="status" required>
-            <option value="belum" <?php if($row['status'] == 'belum') echo 'selected'; ?>>Belum</option>
-            <option value="proses" <?php if($row['status'] == 'proses') echo 'selected'; ?>>Proses</option>
-            <option value="selesai" <?php if($row['status'] == 'selesai') echo 'selected'; ?>>Selesai</option>
+
+            <option value="belum"
+            <?php if($row['status']=='belum') echo 'selected'; ?>>
+                Belum
+            </option>
+
+            <option value="proses"
+            <?php if($row['status']=='proses') echo 'selected'; ?>>
+                Proses
+            </option>
+
+            <option value="selesai"
+            <?php if($row['status']=='selesai') echo 'selected'; ?>>
+                Selesai
+            </option>
+
         </select>
 
         <button type="submit" name="edit">
@@ -61,6 +90,10 @@ if (isset($_POST['edit'])) {
         </button>
 
     </form>
+
+    <a href="dashboard.php" class="back-link">
+        ← Kembali ke Dashboard
+    </a>
 
 </div>
 

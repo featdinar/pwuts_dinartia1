@@ -27,7 +27,6 @@ if (isset($_POST['add'])) {
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>Add Study Plan</title>
     <link rel="stylesheet" href="style.css">
 
@@ -35,29 +34,22 @@ if (isset($_POST['add'])) {
 <body>
 
 <div class="add-container">
-
     <h2>Add Study Plan</h2>
 
     <form method="POST">
-
         <input type="text" name="title" placeholder="Judul Tugas" required>
-
         <textarea name="description" placeholder="Deskripsi"></textarea>
-
         <input type="date" name="deadline" required>
 
         <select name="status" required>
-
             <option value="belum">Belum</option>
             <option value="proses">Proses</option>
             <option value="selesai">Selesai</option>
-
         </select>
 
         <button type="submit" name="add">
-            Save Study Plan
+            Simpan Study Plan
         </button>
-
     </form>
 
 </div>
